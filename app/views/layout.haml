@@ -1,0 +1,19 @@
+!!!
+%html
+  %head
+    %title Wordfind
+    %link{ :rel => "stylesheet", :type => "text/css", :href => "reset.css" }
+    %link{ :rel => "stylesheet", :type => "text/css", :href => "style.css" }
+    %script{                                                                        | 
+      :src => 'js/jquery-1.4.4.js',                                                 |
+      :type => 'text/javascript',                                                   |
+      :charset => 'utf-8' }
+    
+  %body
+    #header
+      #masthead
+        %h1
+          %a{:href => '/', :alt => 'Wordfind'}
+            Wordfind
+    #content= yield 
+    

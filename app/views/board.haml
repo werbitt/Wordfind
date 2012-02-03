@@ -1,0 +1,6 @@
+#board
+  %table
+    -(1..@board['rows']).each do |row|
+      %tr
+        - (1..@board['columns']).each do |col|
+          %td{ :id => "cell_#{row}_#{col}" }= @board['cells'][row - 1][col - 1]['letter'] 

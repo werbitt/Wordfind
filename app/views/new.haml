@@ -1,0 +1,18 @@
+#new
+  %form{:method => 'post'}
+    .title
+      .label
+        %label{:for => 'title'} Title:
+      %input{:id => "title", :name => "post[title]", :type => 'text'} <br />
+  
+    - k = 5
+    - k.times do |x|
+      .word
+        .label
+          %label{:for => "word#{x + 1}"}= 'Words:' if x == 0 
+        %input{:class => 'input_word', :id => "word#{x + 1}", :name => "post[word#{x + 1}]", :type => 'text'} 
+        <br />
+    
+    %input{:id => 'submit_words', :type => 'submit', :value => 'Create'}  
+    
+%script{:src => 'js/new.js', :type => 'text/javascript', :charset => 'utf-8' }

@@ -1,0 +1,134 @@
+$darkblue: #092563
+$lightblue: #DAE5F6
+$word1: #9CC7FF
+$word2: #7AB4FF
+$word3: #5CA4FF
+$word4: #4596FF
+$word5: #308AFF
+
+$serif: "Georgia", "Palatino", "Palatino Linotype", "Times", "Times New Roman", "serif"
+
+$pick: #A6DF99
+
+body
+  font-family: helvetica, arial, san-serif
+  font-size: 100%
+  line-height: 1.125em
+  
+a
+  color: $word5
+  text-decoration: none
+  
+#header
+  #masthead
+    padding: 1em 1em 1em 1em
+    h1
+      font-family: $serif
+      font-size: 6em
+      a
+        color: $darkblue
+
+#content
+  #index
+    padding: 0 2em
+
+    .create-new
+      font-size: 2em
+
+    .heading
+      margin-bottom: .8em
+      h2
+        display: inline
+        font-size: 3em
+        color: $darkblue
+        margin-right: .3em
+        line-height: 1em
+
+    .board-list
+      display: inline
+      position: relative
+      float: left
+      ul
+        padding: 0 0 0 1em
+        margin: 0em
+        list-style: none
+        font-size: 1.5em
+        line-height: 1.3em
+
+
+  #game
+    #board
+      padding: .75em 2em 1em 2em
+      float: left
+      table
+        table-layout: fixed
+        border-collapse: collapse
+        td
+          border: 1px solid white
+          cursor: default
+          width: 2em
+          height: 1.8em
+          vertical-align: middle
+          text-align: center
+          padding-top: .25em
+          -moz-user-select: -moz-none
+          -khtml-user-select: none
+          -webkit-user-select: none
+          user-select: none
+        .word
+          background-color: #236CA6
+        .word1
+          background-color: $word1
+        .word2
+          background-color: $word2    
+        .word3
+          background-color: $word3
+        .word4
+          background-color: $word4
+        .word5
+          background-color: $word5
+        .pick
+          background-color: $pick   
+    #words
+      float: left
+      padding: 1em 1em 1em 4em
+      ol
+        list-style-type: decimal
+        list-style-position: outside
+        line-height: 1.4em
+        li
+          color: #000
+          .word
+            display: inline
+            color: #000
+          .foundWord
+            color: $word4
+
+  #new
+    margin-left: 2em
+    display: block
+    position: relative
+    form
+      .title
+        margin-bottom: 2em
+      .word
+        padding: 0 0 .5em
+      label
+        display: inline
+        padding-top: .2em
+        width: 4em
+        float: left
+      #title
+        width: 20em
+      .input_word
+        width: 20em
+      .add
+        display: inline
+        font-size: .9em
+        padding: 0 0 0 .5em
+      #submit_words
+        margin: 1em 0em 0em 20em
+      
+
+.clear
+  clear: both

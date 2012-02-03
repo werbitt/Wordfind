@@ -1,0 +1,5 @@
+#all-boards.board-list
+  %ul
+    - @games.sort.each do |game|
+      %li
+        %a{:href => game}= game.capitalize
