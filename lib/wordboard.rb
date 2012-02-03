@@ -7,8 +7,8 @@ module Wordfind
 		
 		def initialize(args={})
 			@words ||= args[:words] || []
-			@rows ||= [args[:rows], longest_word_length].compact.max || 4   
-			@columns ||= [args[:columns], longest_word_length].compact.max || 4
+			@rows ||= [args[:rows], longest_word_length].compact.max || 10   
+			@columns ||= [args[:columns], longest_word_length].compact.max || 10
 
 			@board = matrix(@rows, @columns) 
 			place_words
@@ -50,7 +50,7 @@ module Wordfind
 		
 		def place(word, args={})
 			row = args[:row] || rand(@rows) + 1
-			column = args[:columa] || rand(@columns) + 1
+			column = args[:column] || rand(@columns) + 1
 			direction = args[:direction] || rand(8) + 1
 			tries = args[:tries] || WORD_TRIES
 			
