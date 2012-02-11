@@ -10,7 +10,6 @@ module Wordfind
 
 		if development?
 			set :show_exceptions, true
-			register Sinatra::Reloader
 		end
 
 		dir = File.expand_path(File.dirname(__FILE__))

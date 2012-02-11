@@ -1,7 +1,6 @@
 source "http://rubygems.org"
 
 gem 'sinatra'
-gem 'sinatra-reloader', group: 'development', require: 'sinatra/reloader'
 gem 'haml'
 gem 'sass'
 gem 'mongoid', '2.0.0.rc.6'
